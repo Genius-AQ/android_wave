@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/waveform"
+    android:gravity="right" >
+
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:gravity="center"
+		>
+
+		<View 
+		    android:layout_weight="1"
+			android:layout_width="match_parent" 
+			android:layout_height="0dp"
+		    />
+
+		<View 
+		    android:layout_weight="1"
+			android:layout_width="match_parent" 
+			android:layout_height="0dp"
+		    />
+
+		<Button
+		    android:id="@+id/record"
+		    android:layout_width="150dp"
+		    android:layout_height="100dp"
+		    android:layout_margin="20dip"
+		    android:background="#cc0000"
+		    android:height="100dp"
+		    android:text="@string/record"
+		    android:textColor="#ffffff"
+		    android:textSize="30sp"
+		    android:width="300dp" />
+
+		<Button
+		    android:id="@+id/play"
+		    android:layout_width="150dp"
+		    android:layout_height="100dp"
+		    android:layout_margin="20dip"
+		    android:background="#00cc00"
+		    android:height="100dip"
+		    android:text="@string/play"
+		    android:textColor="#ffffff"
+		    android:textSize="30sp"
+		    android:width="100dip" />
+
+		<Button
+		    android:id="@+id/draw"
+		    android:layout_width="150dp"
+		    android:layout_height="100dp"
+		    android:layout_gravity="center"
+		    android:layout_margin="20dip"
+		    android:layout_marginBottom="118dp"
+		    android:background="#fddd00"
+		    android:enabled="true"
+		    android:height="100dip"
+		    android:text="Draw"
+		    android:textColor="#ffffff"
+		    android:textSize="30sp"
+		    android:width="100dip" />
+
+		<View 
+		    android:layout_weight="1"
+			android:layout_width="match_parent" 
+			android:layout_height="0dp"
+		    />		
+	</LinearLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:text=""
+		android:textColor="@drawable/file_path"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal"
+		android:id="@+id/text"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+	    />
+	<RelativeLayout 
+	    android:layout_width="10dp"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+	    android:id="@+id/meter"
+	    >
+	    <View
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/meter"/>
+	    <View
+	        android:id="@+id/meter_cover"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentTop="true"
+		    android:background="#FF000000"/>
+	    	    
+	</RelativeLayout>
+
+</RelativeLayout>
+
